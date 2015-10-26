@@ -222,6 +222,13 @@ for(var i = 0; i < num2; i++){
 //Write a function that is given arr1 and arr2 as it's only arguments. Return the array which is longest.
 
   //Code Here
+  function longest(arr1, arr2) {
+    if (arr1.length > arr2.length) {
+      return "arr1: " + arr1;
+    } else if(arr2.length > arr1.length){
+      return "arr2: " + arr2;
+    }
+  }
 
 
 /*As a continuation of the previous problem, write another function called 'both'.
@@ -230,7 +237,10 @@ for(var i = 0; i < num2; i++){
 */
 
   //Code Here
-  
+  function both(arr1, arr2) {
+    var itTakesTwo = arr1.concat(arr2);
+    return itTakesTwo;
+  }
   
   
 
