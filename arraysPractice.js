@@ -78,7 +78,17 @@ var odds = [];
 
 
   //Code Here
-
+function divider(nums, evens, odds) {
+  for (var i = 0; i < nums.length; i++) {
+    if (nums[i] % 2 === 0) {
+      evens.push(nums[i]);
+    } else {
+      odds.push(nums[i]);
+    }
+  }
+  var numbers = evens.concat(odds);
+  return numbers;
+}
 
 //Next Problem
 
@@ -90,7 +100,16 @@ var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 //Above you're given a function that will return a random number between 0 and 30, and an array full of numbers. Your job is to write a function named finder that will get a random number, then loop through the array to see if that random number is in the array. If it is, return true, if it's not, return false
 
   //Code Here
-
+function finder(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    var random = getRandomArbitrary();
+    if (arr.indexOf(random) !== -1) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
 
 //Next problem
 
