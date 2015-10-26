@@ -119,7 +119,12 @@ var str = 'this is my sentence';
 //Write a function called reverse that takes a given str as it's only argument and returns that string after it's been reversed
 
   //Code Here
-
+function reverse(str) {
+  var arr = str.split('');
+  var rev = arr.reverse();
+  var j = rev.join('');
+  return j;
+}
 
 //Next Problem
 
