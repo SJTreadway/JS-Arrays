@@ -154,6 +154,15 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
     return myGroceryList;
   }
 
+    function addItem(myGroceryList, item) {
+    for (var i = 0; i < myGroceryList.length; i++) {
+      if (myGroceryList.indexOf(item) === -1) {
+        myGroceryList.push(item);
+      }
+    }
+    return myGroceryList;
+  }
+
 //removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
 
