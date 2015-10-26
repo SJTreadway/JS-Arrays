@@ -193,6 +193,15 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 
   //Code Here
 
+function addTen(numbers) {
+  var newArray = [];
+  var newNumbers;
+  for (var i = 0; i < numbers.length; i++) {
+      newNumbers = parseInt(numbers[i]);
+      newArray.push(newNumbers += 10);
+  }
+  return newArray;
+}
 
 
 //Next Problem
