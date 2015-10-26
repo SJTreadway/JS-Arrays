@@ -145,6 +145,15 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
   //Code Here
 
+  function removeItem(myGroceryList, item) {
+    for (var i = 0; i < myGroceryList.length; i++) {
+      if (myGroceryList.indexOf(item) === i) {
+        delete myGroceryList[i];
+      }
+    }
+    return myGroceryList;
+  }
+
 //removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
 
