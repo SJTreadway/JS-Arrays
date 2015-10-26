@@ -280,12 +280,20 @@ array with those four objects. After that console.log the length of the Array an
 sure that it's equal to 4. */
 
   //Code Here
+  devMountainEmployees.push(tyler, cahlan, ryan, colt);
+  console.log(devMountainEmployees.length);
 
 /*Now let's say Cahlan has a mental breakdown and has to take a leave of absence to 'find himself'.
 Loop through your devMountainEmployees until you find cahlan, then remove him from the array.*/
 
   //Code Here
+for (var i in devMountainEmployees) {
+  if (devMountainEmployees[i].name === 'Cahlan') {
+    delete devMountainEmployees[i];
+  }
+}
 
+console.log(devMountainEmployees);
 
 
 
