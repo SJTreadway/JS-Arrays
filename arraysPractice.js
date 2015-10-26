@@ -5,7 +5,9 @@ var arr = [10,20,30];
 //Create a function named 'first' that is given 'arr' as the argument and  returns the first item in the given array.
 
   //Code Here
-sadf
+function first(arr) {
+  return arr.shift();
+}
 
 //Next problem
 
@@ -13,7 +15,9 @@ sadf
 
 var arr = [40,50,60];
 //Create a function named 'last' that is given 'arr' as the argument and returns the last item in the given array.
-
+function last(arr) {
+  return arr.pop();
+}
 
   //Code Here
 
